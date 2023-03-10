@@ -1,7 +1,7 @@
 main: main.o caesar.o vigenere.o decrypt.o
 	g++ -Wall -o main main.o caesar.o vigenere.o decrypt.o
  
-tests: tests.o funcs.o
+tests: tests.o caesar.o vigenere.o decrypt.o
 	g++ -Wall -o tests tests.o caesar.o vigenere.o decrypt.o
 
 test-ascii: test-ascii.o
